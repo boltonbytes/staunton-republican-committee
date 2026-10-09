@@ -10,17 +10,16 @@ export default defineConfig({
   // All internal links/assets flow through import.meta.env.BASE_URL (see
   // src/data/site.ts → url()), so changing targets is just the two lines below.
   //
-  //   • GitHub PROJECT page → https://<user>.github.io/<repo>/   ← current setup
+  //   • GitHub PROJECT page → https://<user>.github.io/<repo>/
   //       site: 'https://<user>.github.io',  base: '/<repo>'
-  //   • Custom domain        → https://example.org/
+  //   • Custom domain        → https://example.org/   ← current setup
   //       site: 'https://example.org'        (delete the `base` line)
   //       + add public/CNAME containing `example.org`
   //   • User/org root page   → https://<user>.github.io/  (repo named <user>.github.io)
   //       site: 'https://<user>.github.io'   (delete the `base` line)
   //
-  // Live project page: https://thepixelmonk.github.io/staunton-republican-committee/
-  site: 'https://thepixelmonk.github.io',
-  base: '/staunton-republican-committee',
+  // Live site: https://stauntonvagop.com/
+  site: 'https://stauntonvagop.com',
 
   integrations: [svelte()],
 
